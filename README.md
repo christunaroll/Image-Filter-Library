@@ -35,7 +35,7 @@ Below is a list of the methods the class has to offer:
 - contrast()
 - original() 
 
-Usage can be done in two ways, after all the functions in the JS file, or in a script tag in the HTML file. [Method 1](https://github.com/christunaroll/Image-Processing-Library/edit/main/README.md#method-1) [Method 2](https://github.com/christunaroll/Image-Processing-Library/blob/main/README.md#method-2-create-objects-in-html-file)
+Usage can be done in two ways, after all the functions in the JS file, or in a script tag in the HTML file. [Method 1](https://github.com/christunaroll/Image-Processing-Library/blob/main/README.md#method-1-create-objects-in-js-file) // [Method 2](https://github.com/christunaroll/Image-Processing-Library/blob/main/README.md#method-2-create-objects-in-html-file)
 
 Create a new ImageProcessing() object in the global scope of the JavaScript file or script. 
 
