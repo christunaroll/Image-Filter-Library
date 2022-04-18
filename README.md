@@ -131,7 +131,7 @@ Include a script tag with a JavaScript type in the tag. Place your object and va
 </html>
 ```
 # Example with Images
-Before Transformation Image
+Before Transformation Image   
 ![Screen Shot 2022-04-18 at 3 03 21 AM](https://user-images.githubusercontent.com/90123164/163792797-37a90841-6f43-49a5-9f62-837adc985917.png)
 
 Image After Transformation (on Canvas)
