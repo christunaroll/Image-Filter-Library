@@ -74,7 +74,7 @@ class ProcessedImage {
 			var data = rgb_info.data;
 
 			contrast *= 2.55; // or *= 255 / 100; scale integer percent to full range
-    		var factor = (255 + contrast) / (255.01 - contrast);  //add .1 to avoid /0 error
+    		var factor = (255 + contrast) / (255.00 - contrast);  //add .1 to avoid /0 error
 		
 			for (let i = 0, n = data.length; i < n; i +=4) {
 				data[i] = factor * (data[i] - 128) + 128;     //r value
@@ -124,4 +124,4 @@ var benji = new ProcessedImage();
 var doggo = new ProcessedImage();
 
 var processed_benji = benji.invert("../images/test_pic.jpg", get_elem("dog"));
-var processed_dog = doggo.contrast("../images/dog.png", get_elem("emoji"), 90);
+var processed_dog = doggo.contrast("../images/dog.png", get_elem("emoji"), -10);

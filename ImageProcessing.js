@@ -87,7 +87,7 @@ class ProcessedImage {
 
 			// determine factor to change image by based on selected contrast 
 			contrast *= 2.55; // or *= 255 / 100
-    		var factor = (255 + contrast) / (255.01 - contrast); 
+			var factor = (255 + contrast) / (255.00 - contrast); 
 		
 			for (let i = 0; i < n; i +=4) {
 				data[i] = factor * (data[i] - 128) + 128;     //red value
