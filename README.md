@@ -35,7 +35,7 @@ Below is a list of the methods the class has to offer:
 - contrast()
 - original() 
 
-Usage can be done in two ways, after all the functions in the JS file, or in a script tag in the HTML file. [Method 1](https://github.com/christunaroll/Image-Processing-Library/edit/main/README.md#method-1) [Method 2](https://github.com/christunaroll/Image-Processing-Library/edit/main/README.md#method-2-create-objects-in-html-file)
+Usage can be done in two ways, after all the functions in the JS file, or in a script tag in the HTML file. [Method 1](https://github.com/christunaroll/Image-Processing-Library/edit/main/README.md#method-1) [Method 2](https://github.com/christunaroll/Image-Processing-Library/blob/main/README.md#method-2-create-objects-in-html-file)
 
 Create a new ImageProcessing() object in the global scope of the JavaScript file or script. 
 
@@ -131,8 +131,8 @@ Include a script tag with a JavaScript type in the tag. Place your object and va
 </html>
 ```
 # Example with Images
-Before Transformation
-Image![Screen Shot 2022-04-18 at 3 03 21 AM](https://user-images.githubusercontent.com/90123164/163792797-37a90841-6f43-49a5-9f62-837adc985917.png)
+Before Transformation Image
+![Screen Shot 2022-04-18 at 3 03 21 AM](https://user-images.githubusercontent.com/90123164/163792797-37a90841-6f43-49a5-9f62-837adc985917.png)
 
 Image After Transformation (on Canvas)
 ![Screen Shot 2022-04-18 at 3 04 26 AM](https://user-images.githubusercontent.com/90123164/163792967-88f612cf-8f5e-4355-9051-f472d035e158.png)
