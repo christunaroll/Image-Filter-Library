@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+</head>
+
+<body>
+  <!-- original images -->
+  <image src="../images/test_pic.jpg" width="400" height="400"></image>
+  <image src="../images/dog.png" width="400" height="400"></image>
+
+  <!-- transformed images -->
+  <canvas id="dog" width="400" height="400"></canvas>
+  <canvas id="emoji" width="400" height="400"></canvas>
+
+  <script src="./ImageProcessing_Test.js"></script>
+
+  <!--
+    <script type="text/javascript">
+          var benji = new ProcessedImage();
+          var doggo = new ProcessedImage();
+
+          var processed_benji = benji.invert("../images/test_pic.jpg", get_elem("dog"));
+          var processed_dog = doggo.contrast("../images/dog.png", get_elem("emoji"), 100);
+      </script>
+  -->
+
+</body>
+
+</html>
