@@ -1,16 +1,16 @@
 # Image Processing Library
 A JavaScript library to invert the colors of a photo or to adjust the contrast of a photo. 
 
+To use the library, download the ```ImageProcessing.js``` into your project directory and include the file into the HTML Page you want to apply the filters. Then follow the [Usage Instructions](https://github.com/christunaroll/Image-Processing-Library/edit/main/README.md#usage) section below.
+
 # Requirements and Restrictions
-This library has to be run on a web browser server and your DOM must loaded to use the functions.
 
-To use the library, include the ImageProcessing.js file into the HTML Page you want to apply the filters. 
+- This library has to be run on a web browser server and your DOM must loaded to use the functions.
+- You must at least have a canvas element using the Canvas API.
+- Images will only be proccessed successfuly if the image file is in a jpg, jpeg, or png format.
 
-You must at least have a Canvas.
-
-Images will only be proccessed successfuly if the image file is in a jpg, jpeg, or png format.
-
-# Usage (HTML File)
+# Usage 
+### HTML File
 In the HTML file, create a canvas element where you want your processed image to be. In the canvas element, define the unique id, width, and height of your canvas. It should be in the format of:
 
 *NOTE: < > is replaced with your desired name and values.*
@@ -18,18 +18,18 @@ In the HTML file, create a canvas element where you want your processed image to
 <canvas id="<unique_id>" width="<width_size>" height="<height_size>"></canvas>
 ```
 
-Additionally, add the ImageProcessing.js script file into the HTML file. For example: 
+Additionally, add the ```ImageProcessing.js``` script file into the HTML file. For example: 
 
 ```html
 <html>
   <body>
-    <canvas id="dog" width="400" height="400"></canvas>
+    <canvas id="doggo" width="400" height="400"></canvas>
     
     <script src="./ImageProcessing.js"></script>
   </body>
 </html>
 ```
-# Usage (JS File)
+### JS File
 Below is a list of the methods the class has to offer:
 - invert()
 - contrast()
@@ -45,7 +45,7 @@ The invert() and original() method takes two parameters, while contrast() takes 
 
 If an image did not process properly, it will alert the user with an error message on the console. A successful processing would result in the image being automatically transformed on the canvas. 
 
-Below are examples of how both the invert() and contrast() methods would be applied. 
+Below are examples of how each methods would be applied. 
 
 ### Using original() (takes two arguments)   
 Example:
@@ -66,7 +66,7 @@ Example:
 ```javascript
 var dog = new ProcessedImage();
 
-var poodle = dog.invert("./images/happy_poodle.jpg", get_elem("doggo"));
+var processed_dog = dog.invert("./images/happy_poodle.jpg", get_elem("doggo"));
 ```
 General:
 ```javascript
@@ -80,7 +80,7 @@ Example:
 ```javascript
 var cat = new ProcessedImage();
 
-var tabby = cat.contrast("./images/confused_cat.png", get_elem("kitty"), 60);
+var processed_cat = cat.contrast("./images/confused_cat.png", get_elem("kitty"), 60);
 ```
 General: 
 ```javascript
@@ -120,12 +120,13 @@ Include a script tag with a JavaScript type in the tag. Place your object and va
 ```html
 <html>
   <body>
-    <canvas id="dog" width="400" height="400"></canvas>
+    <canvas id="doggo" width="400" height="400"></canvas>
     
     <script src="./ImageProcessing.js"></script>
+	  
     <script type="text/javascript">
-          var doggo = new ProcessedImage();
-          var processed_dog = doggo.contrast("sleepy_dog.jpeg", get_elem("dog"), 100);
+          var dog = new ProcessedImage();
+          var processed_dog = dog.contrast("sleepy_dog.jpeg", get_elem("doggo"), 100);
      </script>
   </body>
 </html>
