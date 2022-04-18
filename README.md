@@ -2,7 +2,7 @@
 A JavaScript library to invert the colors of a photo or to adjust the contrast of a photo. 
 
 # Requirements and Restrictions
-This library has to be run on a server and your DOM must loaded to use the functions.
+This library has to be run on a web browser server and your DOM must loaded to use the functions.
 
 To use the library, include the ImageProcessing.js file into the HTML Page you want to apply the filters. 
 
